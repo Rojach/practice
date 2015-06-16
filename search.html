@@ -1,0 +1,11 @@
+<div>
+<table>
+<input type="submit" value="Search"/>
+   <input type="text" ng-model="bookVal"/>
+<tr ng-repeat="books in search|filter:bookVal">      
+           <td style="width:10%">{{books.name|uppercase}}</td>
+            <td style="width:15%">{{books.author}}</td>
+            <td style="width:15%">{{books.price | currency }}</td>
+           </tr>
+</table>
+</div>
